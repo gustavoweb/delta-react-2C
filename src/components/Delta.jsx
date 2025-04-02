@@ -29,15 +29,18 @@ function Delta(){
             <main>
                 <h1>Calculo do Delta</h1>
 
-                <input type="text" />
+                <input type="number" placeholder="A" value={a} 
+                onChange={(e) => setA(e.target.value)}/>
 
-                <input type="text" />
+                <input type="number" placeholder="B" value={b} 
+                onChange={(e) => setB(e.target.value)}/>
 
-                <input type="text" />
+                <input type="number" placeholder="C" value={c} 
+                onChange={(e) => setC(e.target.value)}/>
 
-                <button>Calcular</button>
+                <button onClick={Calculo}>Calcular</button>
                  
-                <h3></h3>
+                <h3>O Delta é: {delta}</h3>
             </main>
         </>
     );
